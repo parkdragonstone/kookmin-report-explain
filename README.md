@@ -16,6 +16,8 @@
     - [Stride Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#stride-phase-1)
     - [Swing Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#swing-phase)
 
+---
+
 ## 투수 리포트 (Pitching Report)
 
 ### 분석 구간
