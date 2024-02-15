@@ -1,5 +1,18 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=4240DD&height=250&section=header&text=KMU%20Baseball%20Report&fontSize=50&fontColor=ffffff&fontAlign=70&fontAlignY=40&desc=Defining%20report%20parameters&descAlign=84&descAlignY=53)
 
+- [투수 리포트 (Pitching Report)](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#투수-리포트-pitching-report)
+    - [분석 구간](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#분석-구간)
+    - [Pitching Efficiency](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#pitching-efficiency)
+    - [Stride Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#stride-phase)
+    - [Arm Cocking Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#arm-cocking-phase)
+    - [Arm Acceleration Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#arm-acceleration-phase)
+
+- [타자 리포트 (Hitting Report)](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#타자-리포트-hitting-report)
+    - [Swing Efficiency](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#swing-efficiency)
+    - [Loading Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#loading-phase)
+    - [Stride Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#stride-phase-1)
+    - [Swing Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#swing-phase)
+
 ## 투수 리포트 (Pitching Report)
 
 ### 분석 구간
@@ -17,10 +30,12 @@
     2. Arm Cocking Phase : FC와 MER 사이의 시간으로 투수의 던지는 팔이 외회전 되면서 던지기 전에 에너지를 저장하는 단계
     3. Arm Acceleration : MER과 BR 사이의 시간으로 공을 던지기 위해 팔을 앞으로 회전하고 가속하는 단계
 ---
+
 ### Pitching Efficiency
 
 - Kinematic Sequence
 ---
+
 ### Stride Phase
 
 - Hip/Shoulder Separation
@@ -28,6 +43,7 @@
 - Trail Leg GRF (AP axis)
 - Trail Leg GRF (Vertical)
 ---
+
 ### Arm Cocking Phase
 
 - Shoulder External Rotation
@@ -37,6 +53,7 @@
 - Lead Leg GRF (AP axis)
 - Lead Leg GRF (Vertical)
 ---
+
 ### Arm Acceleration Phase
 
 - Shoulder Abduction
@@ -63,12 +80,14 @@
     2. Stride Phase : KH와 FC 사이의 시간으로 투수 방향으로 추진하는 구간
     3. Swing Phase : FC와 BC 사이의 시간으로 타자가 스윙하는 구간
 ---
+
 ### Swing Efficiency
 
 - Kinematic Sequence
 - X-Factor
 - Stride Length
 ---
+
 ### Loading Phase
 
 - Sway [Shank Angle]
