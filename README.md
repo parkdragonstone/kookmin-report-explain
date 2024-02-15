@@ -10,6 +10,7 @@
 <br/>
 
 - [타자 리포트 (Hitting Report)](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#타자-리포트-hitting-report)
+    <!-- - [분석 구간](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#loading-phase) -->
     - [Swing Efficiency](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#swing-efficiency)
     - [Loading Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#loading-phase)
     - [Stride Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#stride-phase-1)
@@ -70,6 +71,8 @@
 ---
 
 ## 타자 리포트 (Hitting Report)
+
+### 분석 구간
 
 ![hitting_analysis](img/hitting_analysis.png)
 
