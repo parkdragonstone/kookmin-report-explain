@@ -6,7 +6,7 @@
     - [Stride Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#stride-phase)
     - [Arm Cocking Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#arm-cocking-phase)
     - [Arm Acceleration Phase](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#arm-acceleration-phase)
-    
+
 <br/>
 
 - [타자 리포트 (Hitting Report)](https://github.com/parkdragonstone/kookmin-report-explain?tab=readme-ov-file#타자-리포트-hitting-report)
@@ -66,6 +66,8 @@
 - Lead Leg GRF (AP axis)
 - Lead Leg GRF (Vertical)
 
+---
+---
 
 ## 타자 리포트 (Hitting Report)
 
