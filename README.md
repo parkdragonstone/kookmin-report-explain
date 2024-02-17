@@ -234,11 +234,11 @@
 
 - ___Dead Hands [Lead Shoulder - Hand Distance]___
 > `Dead Hands`는 `FC`에서 두 손의 위치 변화가 없거나 감소하는 것
-><br/r><br/r>
+> <br/r><br/r>
 > 어깨 라인과 손의 거리가 충분히 멀어지는지 관찰
-><br/r><br/r>
+> <br/r><br/r>
 > 어깨와 손이 같은 라인에 있을 때 `0`
-><br/r><br/r>
+> <br/r><br/r>
 > `-` 값으로 증가할수록 손이 어깨 뒤쪽으로 멀어지고, `+` 값으로 증가할수록 손이 어깨 앞쪽으로 멀어지는 것을 의미
 
 - ___Casting The Hands [Elbow Flexion]___
