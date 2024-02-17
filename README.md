@@ -200,7 +200,10 @@
 > 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
 > <br/><br/>
 > `+` 값으로 증가할수록 앞쪽 (타자), `-` 값으로 증가할수록 뒤쪽 (2루) 으로 지면을 밀어냄
+
 - ___Lead Leg GRF (Vertical)___
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfV.png" width = 600>
+
 > 앞 다리 (디딤 발) 가 지면의 수직 방향으로 지면을 밀어내는 힘의 크기
 > <br/><br/>
 > `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
