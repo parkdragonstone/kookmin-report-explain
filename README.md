@@ -22,7 +22,8 @@
 
 ### 분석 구간
 
-![pitching_analysis](img/pitching_analysis.png)
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/assets/118651884/d026e7dc-d2a6-4024-8b4a-b9271c046ed7" width = 600>
+
 
 - 시점
     1. Knee High `KH` : 무릎을 최대로 들어 올릴 때
