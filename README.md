@@ -22,7 +22,7 @@
 
 ### 분석 구간
 
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/assets/118651884/d026e7dc-d2a6-4024-8b4a-b9271c046ed7" width = 600>
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching_analysis.png" width = 600>
 
 
 - 시점
@@ -111,7 +111,7 @@
 
 ### 분석 구간
 
-![hitting_analysis](img/hitting_analysis.png)
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting_analysis.png" width = 600>
 
 - 시점
     1. Toe Off (TO) : 앞 발을 지면에서 떨어졌을 때
