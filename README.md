@@ -25,25 +25,24 @@
 ![pitching_analysis](img/pitching_analysis.png)
 
 - 시점
-    1. Knee High (KH) : 무릎을 최대로 들어 올릴 때
-    2. Foot Contact (FC) : 스트라이드 다리가 지면과 접촉했을 때
-    3. Shoulder Max ER (MER) : 어깨가 최대로 외회전 됐을 때
-    4. Ball Release (BR) : 투수가 공을 던지는 시점
+    1. Knee High `KH` : 무릎을 최대로 들어 올릴 때
+    2. Foot Contact `FC` : 스트라이드 다리가 지면과 접촉했을 때
+    3. Shoulder Max ER `MER` : 어깨가 최대로 외회전 됐을 때
+    4. Ball Release `BR` : 투수가 공을 던지는 시점
 
 - 구간
-    1. Stride Phase : KH와 FC 사이의 시간으로 투수가 타자 방향으로 추진하는 단계
-    2. Arm Cocking Phase : FC와 MER 사이의 시간으로 투수의 던지는 팔이 외회전 되면서 던지기 전에 에너지를 저장하는 단계
-    3. Arm Acceleration : MER과 BR 사이의 시간으로 공을 던지기 위해 팔을 앞으로 회전하고 가속하는 단계
+    1. Stride Phase : `KH` 와 `FC` 사이의 시간으로 투수가 타자 방향으로 추진하는 단계
+    2. Arm Cocking Phase : `FC` 와 `MER` 사이의 시간으로 투수의 던지는 팔이 외회전 되면서 던지기 전에 에너지를 저장하는 단계
+    3. Arm Acceleration : `MER` 과 `BR` 사이의 시간으로 공을 던지기 위해 팔을 앞으로 회전하고 가속하는 단계
 ---
 
 ### Pitching Efficiency
 
 - ___Kinematic Sequence___
-    >- 분절 (골반, 몸통, 팔꿈치, 어깨 or 골반, 몸통, 팔) 회전의 순서와 속도
-    >- 몸 전체 속도를 생성하고 전달할 때 효율적인 순서 : 골반 - 몸통 - 팔꿈치 - 어깨 or 골반 - 몸통 - 팔
+    >- 분절 (`골반, 몸통, 팔꿈치, 어깨` or `골반, 몸통, 팔`)
+    >- 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 - 몸통 - 팔꿈치 - 어깨` or `골반 - 몸통 - 팔`
     >- 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달
----
-
+   
 ### Stride Phase
 
 - ___Hip/Shoulder Separation___
@@ -140,7 +139,7 @@
 
 ### Stride Phase
 
-- ___oss Of Posture [Trunk Lateral Tilt]___
+- ___Loss Of Posture [Trunk Lateral Tilt]___
 - ___Rear Leg AP GRF___
 ---
 
