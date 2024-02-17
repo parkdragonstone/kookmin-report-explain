@@ -248,7 +248,7 @@
 
 - ___Loss Of Space___
     - 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
-
+    <br/><br/>
 
     1. Pelvis Open Timing   
     > `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
@@ -260,7 +260,11 @@
     > <br/><br/>
     > `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
 
-- ___Loss Of Space 3 [Elbow Height]___
+    3. ___Elbow Height___
+    > `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
+    > <br/><br/>
+    > `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
+
 - ___Rear Leg Ground Reaction Force [Vertical]___
 - ___Rear Leg Torque___
 - ___Lead Leg Ground Reaction Force (Vertical)___
