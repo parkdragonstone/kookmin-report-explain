@@ -48,50 +48,42 @@
 2.  골반 - 몸통 - 팔
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/ks_3.png" width = 600>
 
-> 분절 (`골반, 몸통, 팔꿈치, 어깨` or `골반, 몸통, 팔`) 회전의 순서와 속도
-> <br/><br/>
-> 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔꿈치 -> 어깨` or `골반 -> 몸통 -> 팔`
-> <br/><br/>
-> 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달
+> - 분절 (`골반, 몸통, 팔꿈치, 어깨` or `골반, 몸통, 팔`) 회전의 순서와 속도
+> - 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔꿈치 -> 어깨` or `골반 -> 몸통 -> 팔`
+> - 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달
 
 ---
 ### Stride Phase
 - ___Height of Knee & Pelvis___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/KneePelHeight.png" width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Hip/Shoulder Separation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/xfactor.png" width = 600>
 
-> 회전을 통하여 골반 (hip)과 어깨 (shoulder) 사이의 분리된 각도 차이
-> <br/><br/>
-> 하체 (골반)와 상쳬 (어깨) 가 꼬인 정도
-> <br/><br/>
-> `Stride Phase`에서는 `-` 값으로 증가할수록 꼬인 정도가 더 크다는 것을 의미
+> - 회전을 통하여 골반 (hip)과 어깨 (shoulder) 사이의 분리된 각도 차이
+> - 하체 (골반)와 상쳬 (어깨) 가 꼬인 정도
+> - `Stride Phase`에서는 `-` 값으로 증가할수록 꼬인 정도가 더 크다는 것을 의미
 
 - ___Elbow Flexion___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/elbowflex.png" width = 600>
 
-> 팔꿈치가 굽혀지는 각도
-> <br/><br/>
-> `+` 값으로 증가할수록 팔꿈치가 많이 굽혀진 것을 의미
+> - 팔꿈치가 굽혀지는 각도
+> - `+` 값으로 증가할수록 팔꿈치가 많이 굽혀진 것을 의미
 
 - ___Trail Leg GRF (AP axis)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/trailgrfAP.png" width = 600>
 
-> 뒷 다리 (축 다리)가 발의 앞 뒤쪽으로 지면을 밀어내는 힘의 크기
-> <br/><br/>
-> `+` 값으로 증가할수록 앞쪽(타자 방향), `-` 값으로 증가할수록 뒤쪽 (2루 방향)으로 지면을 밀어냄
+> - 뒷 다리 (축 다리)가 발의 앞 뒤쪽으로 지면을 밀어내는 힘의 크기
+> - `+` 값으로 증가할수록 앞쪽(타자 방향), `-` 값으로 증가할수록 뒤쪽 (2루 방향)으로 지면을 밀어냄
 
 - ___Trail Leg GRF (Vertical)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/trailgrfV.png" width = 600>
 
-> 뒷 다리 (축 다리) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
-> <br/><br/>
-> `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
+> - 뒷 다리 (축 다리) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
+> - `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
 ---
 
 ### Arm Cocking Phase
@@ -99,117 +91,98 @@
 - ___Shank Lateral Tilt___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/ShankTilt.png" width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Shoulder External Rotation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SER.png" width = 600>
 
-> 어깨 관절의 움직임 중 하나로, 전완 (아래팔) 이 뒤쪽 (외측) 으로 젖혀지는 것
-> <br/><br/>
-> 최대로 된 상태를 `Arm Cocking` 이라 부름
-> <br/><br/>
-> `+` 값이 증가할수록 전완이 많이 젖혀져 arm cocking 의 크기가 큰 상태
+> - 어깨 관절의 움직임 중 하나로, 전완 (아래팔) 이 뒤쪽 (외측) 으로 젖혀지는 것
+> - 최대로 된 상태를 `Arm Cocking` 이라 부름
+> - `+` 값이 증가할수록 전완이 많이 젖혀져 arm cocking 의 크기가 큰 상태
 
 - ___Shoulder Horizontal Abduction___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SHA.png" width = 600>
 
-> 어깨 관절의 움직임 중 하나로, 위팔을 뒤쪽 (후면) 방향으로 움직이는 것
-> <br/><br/>
-> 공을 던지기 위하여 팔을 뒤로 보낼 때, 어깨가 열리는 동작
-> <br/><br/>
-> 견갑이 모아진 정도를 말하는 `견갑골 장전 (Scap Load)` 와 관련
-> <br/><br/>
-> `-` 값이 증가할수록 팔을 뒤쪽으로 많이 보내 견갑골 장전의 정도가 큰 것을 의미
+> - 어깨 관절의 움직임 중 하나로, 위팔을 뒤쪽 (후면) 방향으로 움직이는 것
+> - 공을 던지기 위하여 팔을 뒤로 보낼 때, 어깨가 열리는 동작
+> - 견갑이 모아진 정도를 말하는 `견갑골 장전 (Scap Load)` 와 관련
+> - `-` 값이 증가할수록 팔을 뒤쪽으로 많이 보내 견갑골 장전의 정도가 큰 것을 의미
 
 - ___Lead Leg Knee Flexion___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlex.png" width = 600>
 
-> `Arm Cocking Phase`에서 앞 다리 (디딤 발) 무릎이 굽혀진 정도
-> <br/><br/>
-> `+` 값으로 증가할수록 앞 다리 (디딤 발) 무릎이 많이 굽혀짐
+> - `Arm Cocking Phase`에서 앞 다리 (디딤 발) 무릎이 굽혀진 정도
+> - `+` 값으로 증가할수록 앞 다리 (디딤 발) 무릎이 많이 굽혀짐
 
 - ___Lead Leg Knee Extention Angular Velocity___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlexVel.png" width = 600>
 
-> 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
-> <br/><br/>
-> 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 것을 의미
+> - 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
+> - 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 것을 의미
 
 - ___Lead Leg GRF (AP axis)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfAP.png" width = 600>
 
-> 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
-> <br/><br/>
-> `+` 값으로 증가할수록 앞 (타자) 방향, `-` 값으로 증가할수록 뒤 (2루) 방향으로 지면을 밀어냄
+> - 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
+> - `+` 값으로 증가할수록 앞 (타자) 방향, `-` 값으로 증가할수록 뒤 (2루) 방향으로 지면을 밀어냄
 
 - ___Lead Leg GRF (Vertical)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfV.png" width = 600>
 
-> 앞 다리 (디딤 발) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
-> <br/><br/>
-> `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
+> - 앞 다리 (디딤 발) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
+> - `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
 ---
 
 ### Arm Acceleration Phase
 - ___Head - Hand Distance___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/HeadHandDist.png" width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Shoulder Abduction___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SHOAB.png" width = 600>
 
-> 어깨 관절의 움직임 중 하나로, 공을 던지기 위하여 몸의 옆쪽으로 팔을 들어 올린 정도
-><br/><br/>
-> 앞에서 보았을 때, 몸의 중심축에서 팔이 옆으로 벌어진 각도
-><br/><br/>
-> `+` 값으로 증가할수록 팔이 옆으로 많이 벌어짐 (들어 올림)
+> - 어깨 관절의 움직임 중 하나로, 공을 던지기 위하여 몸의 옆쪽으로 팔을 들어 올린 정도
+> - 앞에서 보았을 때, 몸의 중심축에서 팔이 옆으로 벌어진 각도
+> - `+` 값으로 증가할수록 팔이 옆으로 많이 벌어짐 (들어 올림)
 
 - ___Trunk Forward Tilt___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/TFT.png" width = 600>
 
-> 몸통이 앞쪽으로 숙여진 각도
-><br/><br/>
-> 곧게 서있는 몸통 각도를 0° 라고 했을 때, 앞쪽으로 숙여질수록 `+` 값이 증가
+> - 몸통이 앞쪽으로 숙여진 각도
+> - 곧게 서있는 몸통 각도를 0° 라고 했을 때, 앞쪽으로 숙여질수록 `+` 값이 증가
 
 - ___Trunk Lateral Tilt___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/TLT.png" width = 600>
 
-> 몸통이 옆으로 기울어진 각도
-><br/><br/>
-> 곧게 서있는 몸통 각도를 0° 라고 했을 때, 던지는 팔 반대 방향으로 기울어질수록 `+` 값으로, 던지는 팔 방향으로 기울어질수록 `-` 값으로 증가
+> - 몸통이 옆으로 기울어진 각도
+> - 곧게 서있는 몸통 각도를 0° 라고 했을 때, 던지는 팔 반대 방향으로 기울어질수록 `+` 값으로, 던지는 팔 방향으로 기울어질수록 `-` 값으로 증가
 
 - ___Lead Leg Knee Flexion___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlex.png" width = 600>
 
-> `Arm Acceleration Phase`에서 앞 다리 (디딤 발) 의 무릎이 굽혀진 정도
-> <br/><br/>
-> `+` 값으로 증가할수록 앞 다리 (디딤 발) 의 무릎이 많이 굽혀짐
+> - `Arm Acceleration Phase`에서 앞 다리 (디딤 발) 의 무릎이 굽혀진 정도
+> - `+` 값으로 증가할수록 앞 다리 (디딤 발) 의 무릎이 많이 굽혀짐
 
 - ___Lead Leg Knee Extention Angular Velocity___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlexVel.png" width = 600>
 
-> 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
-> <br/><br/>
-> 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 의미
+> - 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
+> - 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 의미
 
 - ___Lead Leg GRF (AP axis)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfAP.png" width = 600>
 
-> 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
-> <br/><br/>
-> `+` 값으로 증가할수록 앞쪽 (타자), `-` 값으로 증가할수록 뒤쪽 (2루) 으로 지면을 밀어냄
+> - 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
+> - `+` 값으로 증가할수록 앞쪽 (타자), `-` 값으로 증가할수록 뒤쪽 (2루) 으로 지면을 밀어냄
 
 - ___Lead Leg GRF (Vertical)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfV.png" width = 600>
 
-> 앞 다리 (디딤 발) 가 지면의 수직 방향으로 지면을 밀어내는 힘의 크기
-> <br/><br/>
-> `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
+> - 앞 다리 (디딤 발) 가 지면의 수직 방향으로 지면을 밀어내는 힘의 크기
+> - `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
 ---
 
 
@@ -236,27 +209,22 @@
 - ___Kinematic Sequence___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/kinematic.png" width = 600>
 
-> 분절 (`골반, 몸통, 팔`) 회전 순서와 속도
-> <br/><br/>
-> 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔`
-> <br/><br/>
-> 몸통은 골반을 기반으로 가속하고 골반은 감속, 팔은 몸통을 기반으로 가속하고 몸통은 감속하여 회전력을 전달하는 것이 효율적
+> - 분절 (`골반, 몸통, 팔`) 회전 순서와 속도
+> - 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔`
+> - 몸통은 골반을 기반으로 가속하고 골반은 감속, 팔은 몸통을 기반으로 가속하고 몸통은 감속하여 회전력을 전달하는 것이 효율적
 
 - ___X-Factor___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/xfactor.png width = 600>
   
-> 회전을 통하여 골반 (Hip) 과 어깨 (Shoulder) 사이의 분리된 각도 차이
-> <br/><br/>
-> 하체 (엉덩이) 와 상체 (어깨) 가 꼬인 정도
-> <br/><br/>
-> `-` 값으로 증가할수록 꼬임 정도가 큰 것을 의미
+> - 회전을 통하여 골반 (Hip) 과 어깨 (Shoulder) 사이의 분리된 각도 차이
+> - 하체 (엉덩이) 와 상체 (어깨) 가 꼬인 정도
+> - `-` 값으로 증가할수록 꼬임 정도가 큰 것을 의미
 
 - ___Stride Length___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/stride.png" width = 200>
 
-> 공을 타격할 때 발을 내딛는 거리로 `FC`에서 뒷 발과 앞 발의 거리
-> <br/><br/>
-> 타자의 키에 대한 `%` 로 표현
+> - 공을 타격할 때 발을 내딛는 거리로 `FC`에서 뒷 발과 앞 발의 거리
+> - 타자의 키에 대한 `%` 로 표현
 ---
 
 ### Loading Phase
@@ -264,20 +232,16 @@
 - ___Sway [Shank Angle]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/sway.png width = 600>
 
-> `Sway (스웨이)`는 `Loading Phase` 중에 체중이 투수 반대 방향으로 움직이는 것을 의미
-> <br/><br/>
-> 정강이 각도가 투수 반대 방향으로 얼마나 기울어졌는지를 관찰
-> <br/><br/>
-> `Loading Phase`에서 `-` 값이 있으면 `Sway` 로 판단
+> - `Sway (스웨이)`는 `Loading Phase` 중에 체중이 투수 반대 방향으로 움직이는 것을 의미
+> - 정강이 각도가 투수 반대 방향으로 얼마나 기울어졌는지를 관찰
+> - `Loading Phase`에서 `-` 값이 있으면 `Sway` 로 판단
 
 - ___Rear Leg Torque___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegtorq.png width = 600>
 
-> dd
-> <br/><br/>
-> dd
-> <br/><br/>
-> dd
+> - dd
+> - dd
+> - dd
 
 ---
 
@@ -286,20 +250,16 @@
 - ___Loss Of Posture [Trunk Lateral Tilt]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofposture_tlt.png width = 600>
 
-> 스윙 중 올바른 자세를 만들고 유지하지 못함을 의미
-> <br/><br/>
-> `Loss of Posture`가 얼마나 나타났는지 알기 위해 몸통이 옆쪽으로 얼마나 기울어졌는지를 관찰
-> <br/><br/>
-> `+` 값이 증가할수록 타격하는 타격하는 홈플레이트 방향으로 기울어짐
+> - 스윙 중 올바른 자세를 만들고 유지하지 못함을 의미
+> - `Loss of Posture`가 얼마나 나타났는지 알기 위해 몸통이 옆쪽으로 얼마나 기울어졌는지를 관찰
+> - `+` 값이 증가할수록 타격하는 타격하는 홈플레이트 방향으로 기울어짐
 
 - ___Rear Leg AP GRF___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegapgrf.png width = 600>
 
-> ㅇㅇ
-> <br/><br/>
-> ㅇㅇ
-> <br/><br/>
-> ㅇㅇ
+> - ㅇㅇ
+> - ㅇㅇ
+> - ㅇㅇ
 
 ---
 
@@ -308,20 +268,16 @@
 - ___Dead Hands [Lead Shoulder - Hand Distance]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/deadhands.png width = 600>
 
-> `Dead Hands`는 `FC`에서 두 손의 위치 변화가 없거나 감소하는 것
-> <br/><br/>
-> 어깨 라인과 손의 거리가 충분히 멀어지는지 관찰
-> <br/><br/>
-> 어깨와 손이 같은 라인에 있을 때 `0`
-> <br/><br/>
-> `-` 값으로 증가할수록 손이 어깨 뒤쪽으로 멀어지고, `+` 값으로 증가할수록 손이 어깨 앞쪽으로 멀어지는 것을 의미
+> - `Dead Hands`는 `FC`에서 두 손의 위치 변화가 없거나 감소하는 것
+> - 어깨 라인과 손의 거리가 충분히 멀어지는지 관찰
+> - 어깨와 손이 같은 라인에 있을 때 `0`
+> - `-` 값으로 증가할수록 손이 어깨 뒤쪽으로 멀어지고, `+` 값으로 증가할수록 손이 어깨 앞쪽으로 멀어지는 것을 의미
 
 - ___Casting The Hands [Elbow Flexion]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/castinghand.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Loss Of Space___
     - 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
@@ -332,7 +288,6 @@
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace1.png width = 600>
 
     > - `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
-    > - <br/><br/>
     > - `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
 
     2. ___Lead Shoulder - Hand  Distance___
@@ -340,75 +295,64 @@
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace2.png width = 600>
 
     > - `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
-    > <br/><br/>
     > - `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
 
     3. ___Elbow Height___
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace3.png width = 600>
 
     > - `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
-    > <br/><br/>
     > - `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
 
 - ___Rear Leg Ground Reaction Force [Vertical]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearleggrfvertical.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Rear Leg Torque___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegtorq.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Lead Leg Ground Reaction Force (Vertical)___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadleggrfvertical.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Lead Leg Torque___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadlegtq.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Rear & Lead Leg Ground Reaction Force (AP axis)___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/grf_ap.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Rear Shoulder Ad/Abduction Angular Velocity___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearshoadvel.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Lead Leg Knee Extension Angular Velocity___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadlegkneeextvel.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Lead Elbow Extension Angular Velocity___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadelbowextvel.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
 
 - ___Trunk Lateral Tilt___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/trunklateraltilt.png width = 600>
 
-> 00
-> <br/><br/>
-> 00
+> - 00
+> - 00
