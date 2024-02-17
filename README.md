@@ -252,7 +252,7 @@
 > ` -` 값으로 증가할수록 꼬임 정도가 큰 것을 의미
 
 - ___Stride Length___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/kinematic.png" width = 200>
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/stride.png" width = 200>
 
 > 공을 타격할 때 발을 내딛는 거리로 `FC`에서 뒷 발과 앞 발의 거리
 > <br/><br/>
