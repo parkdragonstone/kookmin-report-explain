@@ -38,25 +38,41 @@
 
 ### Pitching Efficiency
 
-- Kinematic Sequence
+- ___Kinematic Sequence___
+    >- 분절 (골반, 몸통, 팔꿈치, 어깨 or 골반, 몸통, 팔) 회전의 순서와 속도
+    >- 몸 전체 속도를 생성하고 전달할 때 효율적인 순서 : 골반 - 몸통 - 팔꿈치 - 어깨 or 골반 - 몸통 - 팔
+    >- 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달
+ 
 ---
 
 ### Stride Phase
 
-- Hip/Shoulder Separation
-- Elbow Flexion
-- Trail Leg GRF (AP axis)
-- Trail Leg GRF (Vertical)
----
+- ___Hip/Shoulder Separation___
+    >- 회전을 통하여 골반 (hip)과 어깨 (shoulder) 사이의 분리된 각도 차이
+    >- 하체 (골반)와 상쳬 (어깨) 가 꼬인 정도
+    >- Stride Phase 에서는 (-) 값으로 증가할수록 꼬인 정도가 더 크다는 것을 의미
 
+
+- ___Elbow Flexion___
+    >- 팔꿈치가 굽혀지는 각도
+    >- (+) 값으로 증가할수록 팔꿈치가 많이 굽혀진 것을 의미
+
+- ___Trail Leg GRF (AP axis)___
+    >- 뒷 다리 (축 다리)가 발의 앞 뒤쪽으로 지면을 밀어내는 힘의 크기
+    >- (+) 값으로 증가할수록 앞쪽(타자 방향), (-) 값으로 증가할수록 뒤쪽 (2루 방향)으로 지면을 밀어냄
+
+- ___Trail Leg GRF (Vertical)___
+    >- 뒷 다리 (축 다리) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
+    >- (+) 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
 ### Arm Cocking Phase
 
-- Shoulder External Rotation
-- Shoulder Horizontal Abduction
-- Lead Leg Knee Flexion
-- Lead Leg Knee Extention Angular Velocity
-- Lead Leg GRF (AP axis)
-- Lead Leg GRF (Vertical)
+- ___Shoulder External Rotation___
+
+- ___Shoulder Horizontal Abduction___
+- ___Lead Leg Knee Flexion___
+- ___Lead Leg Knee Extention Angular Velocity___
+- ___Lead Leg GRF (AP axis)___
+- ___Lead Leg GRF (Vertical)___
 ---
 
 ### Arm Acceleration Phase
