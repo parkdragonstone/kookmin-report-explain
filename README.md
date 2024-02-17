@@ -56,6 +56,12 @@
 
 ---
 ### Stride Phase
+- ___Height of Knee & Pelvis___
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/KneePelHeight.png" width = 600>
+
+> 00
+> <br/><br/>
+> 00
 
 - ___Hip/Shoulder Separation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/xfactor.png" width = 600>
@@ -65,7 +71,6 @@
 > 하체 (골반)와 상쳬 (어깨) 가 꼬인 정도
 > <br/><br/>
 > `Stride Phase`에서는 `-` 값으로 증가할수록 꼬인 정도가 더 크다는 것을 의미
-
 
 - ___Elbow Flexion___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/elbowflex.png" width = 600>
@@ -90,6 +95,13 @@
 ---
 
 ### Arm Cocking Phase
+
+- ___Shank Lateral Tilt___
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/ShankTilt.png" width = 600>
+
+> 00
+> <br/><br/>
+> 00
 
 - ___Shoulder External Rotation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SER.png" width = 600>
@@ -141,6 +153,12 @@
 ---
 
 ### Arm Acceleration Phase
+- ___Head - Hand Distance___
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/HeadHandDist.png" width = 600>
+
+> 00
+> <br/><br/>
+> 00
 
 - ___Shoulder Abduction___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SHOAB.png" width = 600>
