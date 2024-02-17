@@ -182,7 +182,10 @@
 > 몸통이 옆으로 기울어진 각도
 ><br/><br/>
 > 곧게 서있는 몸통 각도를 0° 라고 했을 때, 던지는 팔 반대 방향으로 기울어질수록 `+` 값으로, 던지는 팔 방향으로 기울어질수록 `-` 값으로 증가
+
 - ___Lead Leg Knee Flexion___
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlex.png" width = 600>
+
 > `Arm Acceleration Phase`에서 앞 다리 (디딤 발) 의 무릎이 굽혀진 정도
 > <br/><br/>
 > `+` 값으로 증가할수록 앞 다리 (디딤 발) 의 무릎이 많이 굽혀짐
