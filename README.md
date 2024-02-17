@@ -157,6 +157,7 @@
 ## 타자 리포트 (Hitting Report)
 
 ### 분석 구간
+
 <img src="(https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting_analysis.png" width = 600>
 
 - 시점
@@ -221,11 +222,11 @@
 > `+` 값이 증가할수록 타격하는 타격하는 홈플레이트 방향으로 기울어짐
 
 - ___Rear Leg AP GRF___
-> 
+> ㅇㅇ
 > <br/><br/>
-> 
+> ㅇㅇ
 > <br/><br/>
->
+> ㅇㅇ
 
 ---
 
