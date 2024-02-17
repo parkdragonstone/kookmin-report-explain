@@ -36,7 +36,7 @@
 - 구간
     1. Stride Phase : `KH` 와 `FC` 사이의 시간으로 투수가 타자 방향으로 추진하는 단계
     2. Arm Cocking Phase : `FC` 와 `MER` 사이의 시간으로 투수의 던지는 팔이 외회전 되면서 던지기 전에 에너지를 저장하는 단계
-    3. Arm Acceleration : `MER` 과 `BR` 사이의 시간으로 공을 던지기 위해 팔을 앞으로 회전하고 가속하는 단계
+    3. Arm Acceleration Phase : `MER` 과 `BR` 사이의 시간으로 공을 던지기 위해 팔을 앞으로 회전하고 가속하는 단계
 ---
 
 ### Pitching Efficiency
