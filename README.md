@@ -175,6 +175,8 @@
 ### Swing Efficiency
 
 - ___Kinematic Sequence___
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/kinematic.png" width = 600>
+
 > 분절 (`골반, 몸통, 팔`) 회전 순서와 속도
 > <br/><br/>
 > 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔`
@@ -182,6 +184,8 @@
 > 몸통은 골반을 기반으로 가속하고 골반은 감속, 팔은 몸통을 기반으로 가속하고 몸통은 감속하여 회전력을 전달하는 것이 효율적
 
 - ___X-Factor___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/xfactor.png width = 600>
+  
 > 회전을 통하여 골반 (Hip) 과 어깨 (Shoulder) 사이의 분리된 각도 차이
 > <br/><br/>
 > 하체 (엉덩이) 와 상체 (어깨) 가 꼬인 정도
