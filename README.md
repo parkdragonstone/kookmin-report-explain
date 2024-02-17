@@ -201,6 +201,8 @@
 ### Loading Phase
 
 - ___Sway [Shank Angle]___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/sway.png width = 600>
+
 > `Sway (스웨이)`는 `Loading Phase` 중에 체중이 투수 반대 방향으로 움직이는 것을 의미
 > <br/><br/>
 > 정강이 각도가 투수 반대 방향으로 얼마나 기울어졌는지를 관찰
@@ -208,6 +210,8 @@
 > `Loading Phase`에서 `-` 값이 있으면 `Sway` 로 판단
 
 - ___Rear Leg Torque___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegtorq.png width = 600>
+
 > dd
 > <br/><br/>
 > dd
@@ -219,6 +223,8 @@
 ### Stride Phase
 
 - ___Loss Of Posture [Trunk Lateral Tilt]___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofposture_tlt.png width = 600>
+
 > 스윙 중 올바른 자세를 만들고 유지하지 못함을 의미
 > <br/><br/>
 > `Loss of Posture`가 얼마나 나타났는지 알기 위해 몸통이 옆쪽으로 얼마나 기울어졌는지를 관찰
@@ -226,6 +232,8 @@
 > `+` 값이 증가할수록 타격하는 타격하는 홈플레이트 방향으로 기울어짐
 
 - ___Rear Leg AP GRF___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegapgrf.png width = 600>
+
 > ㅇㅇ
 > <br/><br/>
 > ㅇㅇ
@@ -237,6 +245,8 @@
 ### Swing Phase
 
 - ___Dead Hands [Lead Shoulder - Hand Distance]___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/deadhands.png width = 600>
+
 > `Dead Hands`는 `FC`에서 두 손의 위치 변화가 없거나 감소하는 것
 > <br/><br/>
 > 어깨 라인과 손의 거리가 충분히 멀어지는지 관찰
@@ -246,6 +256,8 @@
 > `-` 값으로 증가할수록 손이 어깨 뒤쪽으로 멀어지고, `+` 값으로 증가할수록 손이 어깨 앞쪽으로 멀어지는 것을 의미
 
 - ___Casting The Hands [Elbow Flexion]___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/castinghand.png width = 600>
+
 > 00
 > <br/><br/>
 > 00
@@ -254,17 +266,22 @@
     - 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
     <br/><br/>
 
-    1. Pelvis Open Timing   
+    1. Pelvis Open Timing 
+    <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace1.png width = 600>
+
     > `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
     > <br/><br/>
     > `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
 
     2. ___Lead Shoulder - Hand  Distance___
+    <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace2.png width = 600>
+
     > `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
     > <br/><br/>
     > `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
 
     3. ___Elbow Height___
+    <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace3.png width = 600>
     > `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
     > <br/><br/>
     > `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
