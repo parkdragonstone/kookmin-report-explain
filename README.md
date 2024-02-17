@@ -42,7 +42,7 @@
     >- 분절 (골반, 몸통, 팔꿈치, 어깨 or 골반, 몸통, 팔) 회전의 순서와 속도
     >- 몸 전체 속도를 생성하고 전달할 때 효율적인 순서 : 골반 - 몸통 - 팔꿈치 - 어깨 or 골반 - 몸통 - 팔
     >- 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달
- 
+ - 
 ---
 
 ### Stride Phase
@@ -64,29 +64,48 @@
 - ___Trail Leg GRF (Vertical)___
     >- 뒷 다리 (축 다리) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
     >- (+) 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
+
 ### Arm Cocking Phase
 
 - ___Shoulder External Rotation___
+    >- 어깨 관절의 움직임 중 하나로, 전완 (아래팔) 이 뒤쪽 (외측) 으로 젖혀지는 것
+    >- 최대로 된 상태를 "arm cocking" 이라 부름
+    >- (+) 값이 증가할수록 전완이 많이 젖혀져 arm cocking 의 크기가 큰 상태
 
 - ___Shoulder Horizontal Abduction___
+    >- 어깨 관절의 움직임 중 하나로, 위팔을 뒤쪽 (후면) 방향으로 움직이는 것
+    >- 공을 던지기 위하여 팔을 뒤로 보낼 때, 어깨가 열리는 동작
+    >- 견갑이 모아진 정도를 말하는 견갑골 장전 (Scap Load) 와 관련
+    >- (-) 값이 증가할수록 팔을 뒤쪽으로 많이 보내 견갑골 장전의 정도가 큰 것을 의미
+
 - ___Lead Leg Knee Flexion___
+    >- Arm Cocking Phase 에서 앞 다리 (디딤 발) 무릎이 굽혀진 정도
+    >- (+) 값으로 증가할수록 앞 다리 (디딤 발) 무릎이 많이 굽혀짐
+
 - ___Lead Leg Knee Extention Angular Velocity___
+    >- 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
+    >- 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 것을 의미
+
 - ___Lead Leg GRF (AP axis)___
+    >- 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
+    >- (+) 값으로 증가할수록 앞 (타자) 방향, (-) 값으로 증가할수록 뒤 (2루) 방향으로 지면을 밀어냄
 - ___Lead Leg GRF (Vertical)___
+    >- 앞 다리 (디딤 발) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
+    >- (+) 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
 ---
 
 ### Arm Acceleration Phase
 
-- Shoulder Abduction
-- Trunk Forward Tilt
-- Trunk Lateral Tilt
-- Lead Leg Knee Flexion
-- Lead Leg Knee Extention Angular Velocity
-- Lead Leg GRF (AP axis)
-- Lead Leg GRF (Vertical)
+- ___Shoulder Abduction___
+- ___Trunk Forward Tilt___
+- ___Trunk Lateral Tilt___
+- ___Lead Leg Knee Flexion___
+- ___Lead Leg Knee Extention Angular Velocity___
+- ___Lead Leg GRF (AP axis)___
+- ___Lead Leg GRF (Vertical)___
 
 ---
----
+
 
 ## 타자 리포트 (Hitting Report)
 
@@ -108,36 +127,36 @@
 
 ### Swing Efficiency
 
-- Kinematic Sequence
-- X-Factor
-- Stride Length
+- ___Kinematic Sequence___
+- ___X-Factor___
+- ___Stride Length___
 ---
 
 ### Loading Phase
 
-- Sway [Shank Angle]
-- Rear Leg Torque
+- ___Sway [Shank Angle]___
+- ___Rear Leg Torque___
 ---
 
 ### Stride Phase
 
-- Loss Of Posture [Trunk Lateral Tilt]
-- Rear Leg AP GRF
+- ___oss Of Posture [Trunk Lateral Tilt]___
+- ___Rear Leg AP GRF___
 ---
 
 ### Swing Phase
 
-- Dead Hands [Lead Shoulder - Hand Distance]
-- Casting The Hands [Elbow Flexion]
-- Loss Of Space 1 [Pelvis Open Timing]
-- Loss Of Space 2 [Lead Shoulder - Hand  Distance]
-- Loss Of Space 3 [Elbow Height]
-- Rear Leg Ground Reaction Force [Vertical]
-- Rear Leg Torque
-- Lead Leg Ground Reaction Force (Vertical)
-- Lead Leg Torque
-- Rear & Lead Leg Ground Reaction Force (AP axis)
-- Rear Shoulder Ad/Abduction Angular Velocity
-- Lead Leg Knee Extension Angular Velocity
-- Lead Elbow Extension Angular Velocity
-- Trunk Lateral Tilt
+- ___Dead Hands [Lead Shoulder - Hand Distance]___
+- ___Casting The Hands [Elbow Flexion]___
+- ___Loss Of Space 1 [Pelvis Open Timing]___
+- ___Loss Of Space 2 [Lead Shoulder - Hand  Distance]___
+- ___Loss Of Space 3 [Elbow Height]___
+- ___Rear Leg Ground Reaction Force [Vertical]___
+- ___Rear Leg Torque___
+- ___Lead Leg Ground Reaction Force (Vertical)___
+- ___Lead Leg Torque___
+- ___Rear & Lead Leg Ground Reaction Force (AP axis)___
+- ___Rear Shoulder Ad/Abduction Angular Velocity___
+- ___Lead Leg Knee Extension Angular Velocity___
+- ___Lead Elbow Extension Angular Velocity___
+- ___Trunk Lateral Tilt___
