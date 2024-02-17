@@ -247,18 +247,18 @@
 > 00
 
 - ___Loss Of Space___
-> 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
-<br/>
+    - 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
 
-1. Pelvis Open Timing
->> `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
->> <br/><br/>
->> `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
 
-2. ___Lead Shoulder - Hand  Distance___
->> `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
->> <br/><br/>
->> `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
+    1. Pelvis Open Timing   
+    > `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
+    > <br/><br/>
+    > `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
+
+    2. ___Lead Shoulder - Hand  Distance___
+    > `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
+    > <br/><br/>
+    > `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
 
 - ___Loss Of Space 3 [Elbow Height]___
 - ___Rear Leg Ground Reaction Force [Vertical]___
