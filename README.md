@@ -267,7 +267,7 @@
     <br/><br/>
 
     1. Pelvis Open Timing 
-    
+
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace1.png width = 600>
 
     > `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
@@ -283,7 +283,6 @@
     > `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
 
     3. ___Elbow Height___
-
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace3.png width = 600>
 
     > `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
@@ -291,11 +290,64 @@
     > `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
 
 - ___Rear Leg Ground Reaction Force [Vertical]___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearleggrfvertical.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Rear Leg Torque___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegtorq.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Lead Leg Ground Reaction Force (Vertical)___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadleggrfvertical.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Lead Leg Torque___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadlegtq.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Rear & Lead Leg Ground Reaction Force (AP axis)___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/grf_ap.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Rear Shoulder Ad/Abduction Angular Velocity___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearshoadvel.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Lead Leg Knee Extension Angular Velocity___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadlegkneeextvel.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Lead Elbow Extension Angular Velocity___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadelbowextvel.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
+
 - ___Trunk Lateral Tilt___
+<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/trunklateraltilt.png width = 600>
+
+> 00
+> <br/><br/>
+> 00
