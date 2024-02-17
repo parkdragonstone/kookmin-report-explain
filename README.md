@@ -42,6 +42,11 @@
 ### Pitching Efficiency
 
 - ___Kinematic Sequence___
+1. 골반, 몸통, 팔, 어깨
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/pitching_analysis.png" width = 600>
+<br/>
+2.  골반, 몸통, 팔
+<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/pitching_analysis.png" width = 600>
 
 > 분절 (`골반, 몸통, 팔꿈치, 어깨` or `골반, 몸통, 팔`) 회전의 순서와 속도
 > <br/><br/>
@@ -266,7 +271,7 @@
     - 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
     <br/><br/>
 
-    1. Pelvis Open Timing 
+    1. ___Pelvis Open Timing___
 
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace1.png width = 600>
 
