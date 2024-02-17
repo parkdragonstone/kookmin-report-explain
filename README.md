@@ -249,7 +249,7 @@
 > <br/><br/>
 > 하체 (엉덩이) 와 상체 (어깨) 가 꼬인 정도
 > <br/><br/>
-> ` -` 값으로 증가할수록 꼬임 정도가 큰 것을 의미
+> `-` 값으로 증가할수록 꼬임 정도가 큰 것을 의미
 
 - ___Stride Length___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/stride.png" width = 200>
@@ -331,24 +331,24 @@
 
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace1.png width = 600>
 
-    > `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
-    > <br/><br/>
-    > `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
+    > - `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
+    > - <br/><br/>
+    > - `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
 
     2. ___Lead Shoulder - Hand  Distance___
 
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace2.png width = 600>
 
-    > `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
+    > - `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
     > <br/><br/>
-    > `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
+    > - `+` 값으로 증가할수록 스윙 공간이 넓다는 것을 의미
 
     3. ___Elbow Height___
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace3.png width = 600>
 
-    > `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
+    > - `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
     > <br/><br/>
-    > `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
+    > - `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
 
 - ___Rear Leg Ground Reaction Force [Vertical]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearleggrfvertical.png width = 600>
