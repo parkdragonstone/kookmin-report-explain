@@ -50,15 +50,14 @@
 
 > - 분절 (`골반, 몸통, 팔꿈치, 어깨` or `골반, 몸통, 팔`) 회전의 순서와 속도
 > - 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔꿈치 -> 어깨` or `골반 -> 몸통 -> 팔`
-> - 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달
-
+> - 몸통은 골반을 기반으로 하여 가속하고 골반은 감속, 팔꿈치는 몸통을 기반으로 하여 가속하고 몸통은 감속하며 회전력이 전달 : 2번의 사진 처럼 빨간색 (골반) 그래프의 피크점을 타고 초록색 (몸통) 이 증가하고, 초록색 그래프이 피크점을 타고 파란색 (팔)의 그래프가 증가하는 것이 이상적임
+> - `Speed Gain` : `다음 분절 각속도 / 이전 분절 각속도`를 통해 얻어지는 것이며, 1.4 이상이 효율적으로 각속도가 다음 분절로 전달 되었다는 것을 의미
 ---
 ### Stride Phase
 - ___Height of Knee & Pelvis___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/KneePelHeight.png" width = 600>
 
-> - 00
-> - 00
+> - 투수가 진행 방향으로 전진할 때, 무릎과 골반의 높이를 관잘
 
 - ___Hip/Shoulder Separation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/xfactor.png" width = 600>
@@ -66,6 +65,8 @@
 > - 회전을 통하여 골반 (hip)과 어깨 (shoulder) 사이의 분리된 각도 차이
 > - 하체 (골반)와 상쳬 (어깨) 가 꼬인 정도
 > - `Stride Phase`에서는 `-` 값으로 증가할수록 꼬인 정도가 더 크다는 것을 의미
+> - 과도한 꼬임은 선수가 회전하는 능력이 부족하면 오히려 투구 동작에 좋지 않은 영향을 미칠수 있음
+> - `FC` 이후에 최대 꼬임이 나타나는 것이 적절한 타이밍이라 할수 있음
 
 - ___Elbow Flexion___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/elbowflex.png" width = 600>
@@ -91,8 +92,8 @@
 - ___Shank Lateral Tilt___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/ShankTilt.png" width = 600>
 
-> - 00
-> - 00
+> - `FC`에서 앞 다리의 정강이가 측면으로 얼마나 기울었는지를 관찰
+> - 정강이가 바닥과 수직일 때 각도를 0°라고 했을 때, 정강이가 안쪽으로 기울어지면 `-`값으로 증가하고 바깥으로 기울어지면 `+`값으로 증가한다.
 
 - ___Shoulder External Rotation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SER.png" width = 600>
@@ -138,8 +139,7 @@
 - ___Head - Hand Distance___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/HeadHandDist.png" width = 600>
 
-> - 00
-> - 00
+> - `BR` 에서의 귀와 손 사이의 거리
 
 - ___Shoulder Abduction___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SHOAB.png" width = 600>
@@ -183,6 +183,7 @@
 
 > - 앞 다리 (디딤 발) 가 지면의 수직 방향으로 지면을 밀어내는 힘의 크기
 > - `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
+> - 자신 체중의 2배 이상은 좋은 수치라 할수 있음
 ---
 
 
@@ -211,7 +212,8 @@
 
 > - 분절 (`골반, 몸통, 팔`) 회전 순서와 속도
 > - 몸 전체 속도를 생성하고 전달할 때 ___효율적인 순서___ : `골반 -> 몸통 -> 팔`
-> - 몸통은 골반을 기반으로 가속하고 골반은 감속, 팔은 몸통을 기반으로 가속하고 몸통은 감속하여 회전력을 전달하는 것이 효율적
+> - 몸통은 골반을 기반으로 가속하고 골반은 감속, 팔은 몸통을 기반으로 가속하고 몸통은 감속하여 회전력을 전달하는 것이 효율적 : 빨간색 (골반) 그래프의 피크점을 타고 올라가 초록색 (몸통) 그래프가 올라가고, 초록색 (몸통) 그래프의 피크점을 타고 올라가 파란색 (팔) 그래프가 올라가는 것이 이상적
+>- `Speed Gain` : `다음 분절 최대 각속도 / 이전 분절 최대 각속도`로 얻을 수 있는 수치며, 1.4 이상이 이전 분절이 다음 분절로 회전 전달이 좋은 수치로 이루어졌다는 것을 의미함
 
 - ___X-Factor___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/xfactor.png width = 600>
@@ -219,6 +221,8 @@
 > - 회전을 통하여 골반 (Hip) 과 어깨 (Shoulder) 사이의 분리된 각도 차이
 > - 하체 (엉덩이) 와 상체 (어깨) 가 꼬인 정도
 > - `-` 값으로 증가할수록 꼬임 정도가 큰 것을 의미
+> - 과도한 꼬임 각도는 회전 능력이 없으면 타격 타이밍에 영향을 줄수 있음
+> - `FC` 이후에 최대 꼬임이 나타나는 것이 좋은 타이밍이라 할수 있음
 
 - ___Stride Length___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/stride.png" width = 200>
@@ -239,9 +243,8 @@
 - ___Rear Leg Torque___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegtorq.png width = 600>
 
-> - dd
-> - dd
-> - dd
+> - 뒷 다리 (축 다리) 가 스윙 동작 중에 발생하는 회전력으로 스윙의 힘과 안정성을 증가하는데 중요한 역할을 함
+> - `Loading Phase`에서 `45Nm 이상`이면 좋은 수치라고 할 수 있음
 
 ---
 
@@ -257,9 +260,8 @@
 - ___Rear Leg AP GRF___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegapgrf.png width = 600>
 
-> - ㅇㅇ
-> - ㅇㅇ
-> - ㅇㅇ
+> - 뒷 다리 (축 다리) 가 지면과 수직인 방향으로 밀어내는 힘의 크기를 의미
+> - `Loading Phase`에서 자신의 체중의 98% 이상이 좋은 수치라고 할 수 있음
 
 ---
 
@@ -276,22 +278,22 @@
 - ___Casting The Hands [Elbow Flexion]___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/castinghand.png width = 600>
 
-> - 00
-> - 00
+> - `Casting The Hands`는 스윙 시작 시 손과 팔꿈치 사이의 관계
+> - 스윙의 약 1/3 동안 손이 팔꿈치보다 몸에 더 가깝게 유지되어야 함
+> - 일찍 팔꿈치를 펴게 되면 공을 임팩트 할 때, 배트 속도를 감소시킴
+
 
 - ___Loss Of Space___
     - 타자가 투구 라인을 따라 스윙을 할 수 있는 공간을 만들고 유지하지 유지하지 못하는 것
     <br/><br/>
 
     1. ___Pelvis Open Timing___
-
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace1.png width = 600>
 
     > - `Loss of Space`를 확인하기 위해 골반이 언제 열리는지를 관찰
     > - `+` 값으로 급격하게 증가하는 시점이 골반이 열리는 시점
 
     2. ___Lead Shoulder - Hand  Distance___
-
     <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/lossofspace2.png width = 600>
 
     > - `Loss of Space`를 확인하기 위해 어깨와 손 사이의 거리를 관찰하여 공간이 얼마나 있는지 관찰
@@ -303,56 +305,46 @@
     > - `Loss of Space`를 확인하기 위해 스윙 중 팔꿈치의 높이를 관찰
     > - `+`값으로 증가할수록 팔꿈치가 높게 들려 있는 것을 의미
 
-- ___Rear Leg Ground Reaction Force [Vertical]___
-<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearleggrfvertical.png width = 600>
-
-> - 00
-> - 00
-
-- ___Rear Leg Torque___
-<img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearlegtorq.png width = 600>
-
-> - 00
-> - 00
 
 - ___Lead Leg Ground Reaction Force (Vertical)___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadleggrfvertical.png width = 600>
 
-> - 00
-> - 00
+> - 앞 다리 (디딤 발)가 지면과 수직인 방향으로 밀어내는 힘의 크기
+> - `체중의 180%` 이상이면 좋은 수치라 할 수 있음
 
 - ___Lead Leg Torque___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadlegtq.png width = 600>
 
-> - 00
-> - 00
+> - 앞 다리 (디딤 발)가 스윙 동작 중 발생시키는 회전력으로 스윙의 안정성과 힘과 관련됨
+> - `Swing Phase`에서 `100 Nm 이상`이면 좋은 수치라 할 수 있음
 
 - ___Rear & Lead Leg Ground Reaction Force (AP axis)___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/grf_ap.png width = 600>
 
-> - 00
-> - 00
+> - 타자의 앞 - 뒤 방향 (투수 - 포수 방향)으로 지면을 밀어내는 힘의 크기
+> - `Rear` : `+`는 뒷 다리가 앞으로 추진하는 힘
+> - `Lead` : `+`는 앞 다리가 추진하는 신체를 제동 (braking) 하는 힘 (포수 방향) [체중의 70% 이상이 좋은 수치]
+> - `X-Axis Timing` : `100 * Rear의 최대 값 / Lead의 최대 값 시점의 Rear 값`으로 구할 수 있고 뒷 다리와 앞 다리의 적절한 체중이동을 확인하려고 하는 변인 [`80% 이상`이 효율적인 체중 이동]
 
 - ___Rear Shoulder Ad/Abduction Angular Velocity___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/rearshoadvel.png width = 600>
 
-> - 00
-> - 00
+> - 뒷 팔이 몸의 옆쪽으로 모으거나 벌릴 때의 각속도
+> - `+` 값이 클수록 팔이 몸 쪽으로 빠르게 모아졌다는 것을 의미하고, `-` 값이 클수록 팔이 몸 바깥쪽으로 빠르게 벌려졌다는 것을 의미
 
 - ___Lead Leg Knee Extension Angular Velocity___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadlegkneeextvel.png width = 600>
 
-> - 00
-> - 00
+> - 앞 다리 (디딤 발)의 무릎이 펴지는 각속도
+> - `+` 값이 클수록 무릎의 펴는 속도가 크다는 것을 의미
 
 - ___Lead Elbow Extension Angular Velocity___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/leadelbowextvel.png width = 600>
 
-> - 00
-> - 00
+> - 앞 팔의 팔꿈치가 펴지는 각속도
+> - `+` 값이 클수록 앞 팔의 팔꿈치의 펴지는 각속도가 빠르다는 것을 의미
 
 - ___Trunk Lateral Tilt___
 <img src=https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/hitting/trunklateraltilt.png width = 600>
 
-> - 00
-> - 00
+> - 몸통이 곧게 서있을 때가 0° 이며, 우타자의 경우 오른쪽 방향으로 기울어지면 `+`, 좌타자의 경우 왼쪽 방향으로 기울어지면 `+`
