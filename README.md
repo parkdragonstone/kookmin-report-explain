@@ -72,7 +72,8 @@
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/elbowflex.png" width = 600>
 
 > - 팔꿈치가 굽혀지는 각도
-> - `+` 값으로 증가할수록 팔꿈치가 많이 굽혀진 것을 의미
+> - `180°`로 갈수록 팔꿈치가 굽혀지는, `0°`으로 갈수록 팔꿈치가 펴지는 것을 의미
+> - 회전할 때 팔꿈치가 빠른 시점에 펴지기 시작하면 회전하는데 더 많은 힘과 팔꿈치에 부하가 더 커지기 때문에 적절한 타이밍에 팔을 펴는것이 중요함 : `FC` 이후에 최대점이 나타나고 `MER`까지 최대한 유지하고 `Arm Acceleration Phase`에서 급격하게 0° 방향으로 그래프가 움직이는 것이 적절할 것으로 판단됨
 
 - ___Trail Leg GRF (AP axis)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/trailgrfAP.png" width = 600>
@@ -101,6 +102,7 @@
 > - 어깨 관절의 움직임 중 하나로, 전완 (아래팔) 이 뒤쪽 (외측) 으로 젖혀지는 것
 > - 최대로 된 상태를 `Arm Cocking` 이라 부름
 > - `+` 값이 증가할수록 전완이 많이 젖혀져 arm cocking 의 크기가 큰 상태
+> - 값이 클수록 구속과 관련이 있지만, 과도한 각도는 부상 위험이 있음
 
 - ___Shoulder Horizontal Abduction___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SHA.png" width = 600>
@@ -110,30 +112,6 @@
 > - 견갑이 모아진 정도를 말하는 `견갑골 장전 (Scap Load)` 와 관련
 > - `-` 값이 증가할수록 팔을 뒤쪽으로 많이 보내 견갑골 장전의 정도가 큰 것을 의미
 
-- ___Lead Leg Knee Flexion___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlex.png" width = 600>
-
-> - `Arm Cocking Phase`에서 앞 다리 (디딤 발) 무릎이 굽혀진 정도
-> - `+` 값으로 증가할수록 앞 다리 (디딤 발) 무릎이 많이 굽혀짐
-
-- ___Lead Leg Knee Extention Angular Velocity___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlexVel.png" width = 600>
-
-> - 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
-> - 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 것을 의미
-
-- ___Lead Leg GRF (AP axis)___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfAP.png" width = 600>
-
-> - 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
-> - `+` 값으로 증가할수록 앞 (타자) 방향, `-` 값으로 증가할수록 뒤 (2루) 방향으로 지면을 밀어냄
-
-- ___Lead Leg GRF (Vertical)___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfV.png" width = 600>
-
-> - 앞 다리 (디딤 발) 가 지면과 수직인 방향으로 지면을 밀어내는 힘의 크기
-> - `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
----
 
 ### Arm Acceleration Phase
 - ___Head - Hand Distance___
@@ -147,6 +125,7 @@
 > - 어깨 관절의 움직임 중 하나로, 공을 던지기 위하여 몸의 옆쪽으로 팔을 들어 올린 정도
 > - 앞에서 보았을 때, 몸의 중심축에서 팔이 옆으로 벌어진 각도
 > - `+` 값으로 증가할수록 팔이 옆으로 많이 벌어짐 (들어 올림)
+> - `BR`에서 어떤 수치인지가 중요하며 80 ~ 110° 사이가 권장되며, 그 이상이 될 경우 어깨 관절 부상을 조심해야할 수 있음
 
 - ___Trunk Forward Tilt___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/TFT.png" width = 600>
@@ -154,29 +133,38 @@
 > - 몸통이 앞쪽으로 숙여진 각도
 > - 곧게 서있는 몸통 각도를 0° 라고 했을 때, 앞쪽으로 숙여질수록 `+` 값이 증가
 
+
 - ___Trunk Lateral Tilt___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/TLT.png" width = 600>
 
 > - 몸통이 옆으로 기울어진 각도
 > - 곧게 서있는 몸통 각도를 0° 라고 했을 때, 던지는 팔 반대 방향으로 기울어질수록 `+` 값으로, 던지는 팔 방향으로 기울어질수록 `-` 값으로 증가
+> - 과도한 각도는 제구력의 문제 또는 어깨 부상에 취약한 문제가 있을 수 있음
+
 
 - ___Lead Leg Knee Flexion___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlex.png" width = 600>
 
 > - `Arm Acceleration Phase`에서 앞 다리 (디딤 발) 의 무릎이 굽혀진 정도
 > - `+` 값으로 증가할수록 앞 다리 (디딤 발) 의 무릎이 많이 굽혀짐
+> - `FC`에서 `MER`로 진행될 때 살짝 굽혀지며, `MER`에서 `BR`로 진행될 때 무릎이 펴짐
+> - `FC`에서 `MER`로 진행될 때 과도하게 굽혀지면 Stretch - Shortening Cycle `SSC` 를 잘 활용하지 못해 하체에서 폭발적임 힘을 사용하지 못하게 될 수 있음
 
 - ___Lead Leg Knee Extention Angular Velocity___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/LeadKneeFlexVel.png" width = 600>
 
 > - 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도
 > - 값이 클수록 앞 다리 (디딤 발) 의 무릎이 펴지는 각속도가 빠르다는 의미
+> - 구속과 관련있는 변인 중 하나
 
 - ___Lead Leg GRF (AP axis)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfAP.png" width = 600>
 
+> - 흔히 제동력 (Braking Force) 라고 함
 > - 앞 다리 (디딤 발) 가 발의 앞 - 뒤 (타자 - 2루) 방향으로 지면을 밀어내는 힘의 크기
 > - `+` 값으로 증가할수록 앞쪽 (타자), `-` 값으로 증가할수록 뒤쪽 (2루) 으로 지면을 밀어냄
+> - 즉, `-` 값으로 클수록 제동력이 좋은 투수라고 할 수 있음
+> - 구속과 정적 상관관계가 있는 변인 중 하나
 
 - ___Lead Leg GRF (Vertical)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/leadgrfV.png" width = 600>
@@ -184,6 +172,7 @@
 > - 앞 다리 (디딤 발) 가 지면의 수직 방향으로 지면을 밀어내는 힘의 크기
 > - `+` 값으로 증가할수록 더 큰 힘으로 지면을 밀어냄
 > - 자신 체중의 2배 이상은 좋은 수치라 할수 있음
+> - 구속과 정적 상관관계가 있는 변인 중 하나
 ---
 
 
