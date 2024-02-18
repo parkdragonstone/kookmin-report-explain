@@ -73,7 +73,8 @@
 
 > - 팔꿈치가 굽혀지는 각도
 > - `180°`로 갈수록 팔꿈치가 굽혀지는, `0°`으로 갈수록 팔꿈치가 펴지는 것을 의미
-> - 회전할 때 팔꿈치가 빠른 시점에 펴지기 시작하면 회전하는데 더 많은 힘과 팔꿈치에 부하가 더 커지기 때문에 적절한 타이밍에 팔을 펴는것이 중요함 : `FC` 이후에 최대점이 나타나고 `MER`까지 최대한 유지하고 `Arm Acceleration Phase`에서 급격하게 0° 방향으로 그래프가 움직이는 것이 적절할 것으로 판단됨
+> - 회전할 때 팔꿈치가 빠른 시점에 펴지기 시작하면 회전하는데 더 많은 힘과 팔꿈치에 부하가 더 커지기 때문에 적절한 타이밍에 팔을 펴는것이 중요함
+> - `FC` 이후에 최대점이 나타나고 `MER`까지 최대한 유지하고 `Arm Acceleration Phase`에서 급격하게 0° 방향으로 그래프가 움직이는 것이 적절할 것으로 판단됨
 
 - ___Trail Leg GRF (AP axis)___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/trailgrfAP.png" width = 600>
