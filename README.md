@@ -54,11 +54,6 @@
 > - `Speed Gain` : `다음 분절 각속도 / 이전 분절 각속도`를 통해 얻어지는 것이며, 1.4 이상이 효율적으로 각속도가 다음 분절로 전달 되었다는 것을 의미
 ---
 ### Stride Phase
-- ___Height of Knee & Pelvis___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/KneePelHeight.png" width = 600>
-
-> - 투수가 진행 방향으로 전진할 때, 무릎과 골반의 높이를 관잘
-
 - ___Hip/Shoulder Separation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/xfactor.png" width = 600>
 
@@ -91,12 +86,6 @@
 
 ### Arm Cocking Phase
 
-- ___Shank Lateral Tilt___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/ShankTilt.png" width = 600>
-
-> - `FC`에서 앞 다리의 정강이가 측면으로 얼마나 기울었는지를 관찰
-> - 정강이가 바닥과 수직일 때 각도를 0°라고 했을 때, 정강이가 안쪽으로 기울어지면 `-`값으로 증가하고 바깥으로 기울어지면 `+`값으로 증가한다.
-
 - ___Shoulder External Rotation___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SER.png" width = 600>
 
@@ -115,11 +104,6 @@
 
 
 ### Arm Acceleration Phase
-- ___Head - Hand Distance___
-<img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/HeadHandDist.png" width = 600>
-
-> - `BR` 에서의 귀와 손 사이의 거리
-
 - ___Shoulder Abduction___
 <img src="https://github.com/parkdragonstone/kookmin-report-explain/blob/master/img/pitching/SHOAB.png" width = 600>
 

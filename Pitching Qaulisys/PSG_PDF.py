@@ -194,7 +194,7 @@ class PDF(FPDF):
         self.line(x_left,y3,x_right,y3)
         
 class report_data():
-    def grf(data, cols, time, fc_time, mer_time, br_time, f_rear_peak_z_time, f_lead_peak_z_time, axis):
+    def grf(data, cols, time, kh_time, fc_time, mer_time, br_time, f_rear_peak_z_time, f_lead_peak_z_time,f_rear_peak_y_time,f_lead_min_y_time, axis):
         if axis == 'ap':
             title = 'GROUND REACTION FORCE (AP-AXIS)'
         else:
@@ -204,6 +204,7 @@ class report_data():
             'max_frame' : {},
             'min'       : {},
             'min_frame' : {},
+            'kh_time'   : {},
             'fc_time'   : {},
             'mer_time'  : {},
             'br_time'   : {},
@@ -214,6 +215,7 @@ class report_data():
             df = data[col]
             plt.plot(time, np.array(df), color = cols[col][-1], label = cols[col][0])
             
+            y['kh_time'][col]   = round(df[kh_time], 2)
             y['fc_time'][col]   = round(df[fc_time], 2)
             y['mer_time'][col]  = round(df[mer_time], 2)
             y['br_time'][col]   = round(df[br_time], 2)
@@ -224,7 +226,17 @@ class report_data():
             
         if axis == 'vt':
             plt.axvline(time[f_rear_peak_z_time], color = cols['REAR_FORCE_Z'][-1], linestyle ='--',alpha = 0.7)
-            plt.axvline(time[f_lead_peak_z_time], color = cols['LEAD_FORCE_Z'][-1], linestyle ='--',alpha = 0.7)
+            if col in ['LEAD_FORCE_Z']:
+                plt.axvline(time[f_lead_peak_z_time], color = cols['LEAD_FORCE_Z'][-1], linestyle ='--',alpha = 0.7)
+                y['max'][col]       = round(df[fc_time:br_time].max(), 2)
+                y['max_frame'][col] = np.where(df == df[fc_time:br_time].max())[0][0]
+                plt.axvline(time[y['max_frame'][col]], color = cols['LEAD_FORCE_Z'][-1], linestyle ='--',alpha = 0.7)
+
+        if axis == 'ap':
+            plt.axvline(time[f_rear_peak_y_time], color = cols['REAR_FORCE_Y'][-1], linestyle ='--',alpha = 0.7)
+            if col in ['LEAD_FORCE_Y']:
+                plt.axvline(time[f_lead_min_y_time], color = cols['LEAD_FORCE_Y'][-1], linestyle ='--',alpha = 0.7)
+            
 
         m = data[cols.keys()].max().max()    
         
@@ -239,7 +251,7 @@ class report_data():
         plt.axhline(0,color='k',lw=0.9)
         
         plt.text(time[0]        ,y = m, s='Knee High'    ,rotation = 90, verticalalignment='top',horizontalalignment='left')
-        plt.text(time[fc_time]  ,y = m, s='Foot Contact'   ,rotation = 90, verticalalignment='top',horizontalalignment='left')
+        plt.text(time[fc_time]  ,y = m, s='Foot Contact' ,rotation = 90, verticalalignment='top',horizontalalignment='left')
         plt.text(time[mer_time] ,y = m, s='MER'          ,rotation = 90, verticalalignment='top',horizontalalignment='left')
         plt.text(time[br_time]  ,y = m, s='Ball Release' ,rotation = 90, verticalalignment='top',horizontalalignment='left')
         plt.legend()
@@ -254,19 +266,17 @@ class report_data():
         
         return y
 
-    def one_angle(data, cols, time, k_fc_time, k_fp_time, k_mer_time, k_br_time):
+    def one_angle(data, cols, time, k_kh_time, k_fc_time, k_mer_time, k_br_time):
         ang = {
             'max'       : {},
             'max_frame' : {},
             'min'       : {},
             'min_frame' : {},
+            'kh_time'   : {},
             'fc_time'   : {},
             'fp_time'   : {},
             'mer_time'  : {},
             'br_time'   : {},
-            'fc_br'     : {},
-            'fc_br_min'   : {},
-            'fc_br_max'   : {},
             }
         
         for col in cols:
@@ -279,20 +289,31 @@ class report_data():
                 
             fig, ax = plt.subplots()
             plt.plot(time, np.array(df), color = 'firebrick')
-            
+
+            ang['kh_time'][col]   = round(df[k_kh_time], 2)
             ang['fc_time'][col]   = round(df[k_fc_time], 2)
-            ang['fp_time'][col]   = round(df[k_fp_time], 2)
+            #ang['fp_time'][col]   = round(df[k_fp_time], 2)
             ang['mer_time'][col]  = round(df[k_mer_time], 2)
             ang['br_time'][col]   = round(df[k_br_time], 2)
             ang['max'][col]       = round(df.max(), 2)
             ang['max_frame'][col] = np.where(df == df.max())[0][0]
             ang['min'][col]       = round(df.min(), 2)
             ang['min_frame'][col] = np.where(df == df.min())[0][0]
-            
-            ang['fc_br'][col] = df[k_fc_time:k_br_time+1]
-            ang['fc_br_max'][col] = np.where(df == ang['fc_br'][col].max())[0][0]
-            ang['fc_br_min'][col] = np.where(df == ang['fc_br'][col].min())[0][0]
         
+            
+            if col in ['TORSO_PELVIS_ANGLE_Z','LEAD_SHOULDER_ANGLE_X']:
+                plt.axvline(time[np.where(df == df.min())[0][0]], color = 'firebrick', linestyle = '--',alpha=0.7)
+            
+            elif col in ['TORSO_ANGLE_Y','LEAD_ELBOW_ANGLE_X','LEAD_SHOULDER_ANGLE_Y','LEAD_SHOULDER_ANGLE_Z','LEAD_KNEE_ANGULAR_VELOCITY_X']:
+                ang['max'][col]  = round(df[k_fc_time-40:k_br_time+15].max(), 2)
+                ang['max_frame'][col] = np.where(df == df[k_fc_time-40:k_br_time+15].max())[0][0]
+                plt.axvline(time[ang['max_frame'][col]], color = 'firebrick', linestyle = '--',alpha=0.7)       
+
+            elif col in ['LEAD_KNEE_ANGLE_X']:
+                ang['max'][col]  = round(df[k_fc_time:k_br_time+1].max(), 2)
+                ang['max_frame'][col] = np.where(df == df[k_fc_time:k_br_time+1].max())[0][0]
+                plt.axvline(time[ang['max_frame'][col]], color = 'firebrick', linestyle = '--',alpha=0.7)
+                
                         
             m = df.max()
             
@@ -332,6 +353,11 @@ class report_data():
             plt.plot(time, np.array(data[col]), color = ks_cols[col][-1], label=ks_cols[col][0])
             ks['peak'][col] = round(data[col].max(), 2)
             ks['time'][col] = np.where(data[col] == data[col].max())[0][0]
+
+            if col == 'LEAD_SHOULDER_ANGULAR_VELOCITY_Z':
+                ks['peak'][col] = round(data[col].iloc[k_fc_time:k_br_time+20].max(), 2)
+                ks['time'][col] = np.where(data[col] == data[col].iloc[k_fc_time:k_br_time+20].max())[0][0]
+
             
             plt.axvline(time[ks['time'][col]], color = ks_cols[col][-1], linestyle ='-', alpha= 0.7)
                 
@@ -361,7 +387,7 @@ class report_data():
         return ks
     
     def create_bullet_chart(nm, title, actual_value, min_value, target_value1, target_value2, max_value, unit=''):
-        fig, ax = plt.subplots(figsize=(10, 0.8))
+        fig, ax = plt.subplots(figsize=(10, 0.6))
         ax.axis('off')
 
         if actual_value < min_value:
@@ -369,79 +395,20 @@ class report_data():
         elif actual_value > max_value:
             max_value = actual_value
 
-        plt.barh(0, max_value, height=0.5, left=min_value, color='white')
+        plt.barh(0, max_value, height=0.05, left=min_value, color='white')
 
         plt.fill_betweenx([-0.05, 0.05], min_value, max_value, color='dimgray', alpha=0.8)
         plt.fill_betweenx([-0.18, 0.18], target_value1, target_value2, color='crimson', alpha=0.5)
 
-        plt.plot(actual_value, 0, marker=7, color='black', markersize=13)
+        plt.plot(actual_value, 0, marker=7, color='black', markersize=8)
 
-        ax.text(actual_value, 0.4, f"{actual_value}{unit}", horizontalalignment='center', verticalalignment='bottom', fontsize=10)
-        ax.text(target_value1, -0.3, f"{target_value1}{unit}", horizontalalignment='center', verticalalignment='top', fontsize=10)
-        ax.text(target_value2, -0.3, f"{target_value2}{unit}", horizontalalignment='center', verticalalignment='top', fontsize=10)
-        ax.text(0, 1, title, transform=ax.transAxes, horizontalalignment='left', verticalalignment='top', fontsize=12)
+        ax.text(actual_value, 0.2, f"{actual_value}{unit}", horizontalalignment='center', verticalalignment='bottom', fontsize=9)
+        ax.text(target_value1, -0.3, f"{target_value1}{unit}", horizontalalignment='center', verticalalignment='top', fontsize=9)
+        ax.text(target_value2, -0.3, f"{target_value2}{unit}", horizontalalignment='center', verticalalignment='top', fontsize=9)
+        ax.text(0, 0.5, title, transform=ax.transAxes, horizontalalignment='left', verticalalignment='top', fontsize=9)
 
         plt.xlim(min_value, max_value)
         plt.ylim(-0.8, 0.5)
         
         plt.savefig(f'figure/bar/{nm}_bar.png')
         plt.close()
-            
-    def kinematic_sequence_comparison_bar_individual(df):
-        # Define the data for each category, swapping 'Me' and '90+ mph Pitchers'
-        categories = ['<145km/h', 'Me', 'KBO', 'High School']
-        data = {
-            'Pelvic': [840, df['PELVIS_ANGLUAR_VELOCITY_Z'].max(), 740, 596],
-            'Torso': [1174, df['TORSO_ANGLUAR_VELOCITY_Z'].max(), 1068, 831],
-            'Elbow': [2710, df['LEAD_ELBOW_ANGULAR_VELOCITY_X'].max(), 2710, 2327],
-            'Shoulder': [4884, df['LEAD_SHOULDER_ANGULAR_VELOCITY_Z'].max(), 5523, 6019]
-        }
-
-        # Define colors for each body part
-        colors = {
-            'Pelvic': 'darkred',
-            'Torso': 'darkgreen',
-            'Elbow': 'royalblue',
-            'Shoulder': 'gold'
-        }
-        
-        # Number of categories
-        n_categories = len(categories)
-
-        # Bar width
-        bar_width = 0.5  # Adjust this value for desired bar width
-        fig_width = 6   # Adjust this value for desired figure width
-        fig_height = 4   # Adjust this value for desired figure height
-
-        # Create a bar chart for each body part
-        for part, values in data.items():
-            # Create a new figure with a narrower width
-            fig, ax = plt.subplots(figsize=(fig_width, fig_height))
-
-            # Calculate the bar positions
-            bar_positions = np.arange(n_categories)
-
-            # Plot bars for each category
-            for i in range(n_categories):
-                if categories[i] == 'Me':
-                    # Emphasize the 'Me' bar
-                    ax.bar(bar_positions[i], values[i], color=colors[part], width=bar_width, label=part if i == 0 else "", hatch='/')
-                else:
-                    # Regular bar for other categories
-                    ax.bar(bar_positions[i], values[i], color=colors[part], width=bar_width, label=part if i == 0 else "")
-
-            # Set the position and labels for x-ticks
-            ax.set_xticks(bar_positions)
-            ax.set_xticklabels(categories)
-
-            # Adding labels and title
-            plt.ylabel('Velocity (Deg/s)',fontsize=18)
-            plt.title(f'{part} Angular Velocity Comparison', fontsize=18, fontweight='bold')
-
-            plt.xticks(fontsize=14,rotation=25)
-            plt.yticks(fontsize=14,rotation=25)
-            
-            plt.legend()
-            plt.tight_layout()
-            plt.savefig(f"figure/{part}_kinevelo.jpg")
-            plt.close()
